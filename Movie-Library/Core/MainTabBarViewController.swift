@@ -29,6 +29,20 @@ class MainTabBarViewController: UITabBarController {
         vc3.title = "Search"
         vc4.title = "Profile"
 
+        tabBar.tintColor = .label
+        tabBar.isTranslucent = false
+        tabBar.backgroundColor = .systemGray4
+
+        let tabBarAppearance = UITabBarAppearance()
+        let tabBarItemAppearance = UITabBarItemAppearance()
+
+        tabBarItemAppearance.selected.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.orange]
+        tabBarItemAppearance.selected.iconColor = .orange
+
+        tabBarAppearance.stackedLayoutAppearance = tabBarItemAppearance
+
+        tabBar.standardAppearance = tabBarAppearance
+
         setViewControllers([vc1, vc2, vc3, vc4], animated: true)
     }
     
