@@ -13,6 +13,11 @@
 		896D77012890639D008C2BF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896D76FF2890639D008C2BF5 /* Main.storyboard */; };
 		896D77032890639F008C2BF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896D77022890639F008C2BF5 /* Assets.xcassets */; };
 		896D77062890639F008C2BF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896D77042890639F008C2BF5 /* LaunchScreen.storyboard */; };
+		896D770F28906479008C2BF5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896D770E28906479008C2BF5 /* HomeViewController.swift */; };
+		896D77112890648B008C2BF5 /* MediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896D77102890648B008C2BF5 /* MediaViewController.swift */; };
+		896D771328906499008C2BF5 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896D771228906499008C2BF5 /* SearchViewController.swift */; };
+		896D7715289064AC008C2BF5 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896D7714289064AC008C2BF5 /* MainTabBarViewController.swift */; };
+		896D7717289064BD008C2BF5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896D7716289064BD008C2BF5 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		896D77022890639F008C2BF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		896D77052890639F008C2BF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		896D77072890639F008C2BF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		896D770E28906479008C2BF5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		896D77102890648B008C2BF5 /* MediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaViewController.swift; sourceTree = "<group>"; };
+		896D771228906499008C2BF5 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		896D7714289064AC008C2BF5 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		896D7716289064BD008C2BF5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 		896D76F82890639D008C2BF5 /* Movie-Library */ = {
 			isa = PBXGroup;
 			children = (
+				896D770D28906450008C2BF5 /* Core */,
 				896D76F92890639D008C2BF5 /* AppDelegate.swift */,
 				896D76FB2890639D008C2BF5 /* SceneDelegate.swift */,
 				896D76FD2890639D008C2BF5 /* ViewController.swift */,
@@ -65,6 +76,18 @@
 				896D77072890639F008C2BF5 /* Info.plist */,
 			);
 			path = "Movie-Library";
+			sourceTree = "<group>";
+		};
+		896D770D28906450008C2BF5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				896D770E28906479008C2BF5 /* HomeViewController.swift */,
+				896D77102890648B008C2BF5 /* MediaViewController.swift */,
+				896D771228906499008C2BF5 /* SearchViewController.swift */,
+				896D7714289064AC008C2BF5 /* MainTabBarViewController.swift */,
+				896D7716289064BD008C2BF5 /* ProfileViewController.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +161,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				896D771328906499008C2BF5 /* SearchViewController.swift in Sources */,
 				896D76FE2890639D008C2BF5 /* ViewController.swift in Sources */,
+				896D77112890648B008C2BF5 /* MediaViewController.swift in Sources */,
+				896D7715289064AC008C2BF5 /* MainTabBarViewController.swift in Sources */,
 				896D76FA2890639D008C2BF5 /* AppDelegate.swift in Sources */,
 				896D76FC2890639D008C2BF5 /* SceneDelegate.swift in Sources */,
+				896D7717289064BD008C2BF5 /* ProfileViewController.swift in Sources */,
+				896D770F28906479008C2BF5 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
